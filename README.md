@@ -40,17 +40,18 @@ The HelloID-Conn-Prov-Source-magister-students is used to retrieve students from
 The following settings are required to connect to the API.
 
 | Setting     | Description |
-| ------------ | ----------- |
-| Username     | The username   |
-| Password   | The password  |
-| BaseUrl    |    The URL to the Magister environment. Example: https://tools4ever.swp.nl:8800
-| Layout | Name of the list in Decibel to export
-| isDebug | Debug toggle
+| ----------- | ----------- |
+| Username    | The username   |
+| Password    | The password  |
+| BaseUrl     |    The URL to the Magister environment. Example: https://tools4ever.swp.nl:8800
+| Layout      | Name of the list in Decibel to export
+| isDebug     | Debug toggle
 
 
 
 
 ### Remarks
+ - Data Processing: It categorizes student enrollments by period status (active/future/past), prioritizes the most relevant enrollment per student, and organizes multiple enrollments as contracts with associated details. 
  - Execute on-premises because of IP whitelisting on Magister site
  - The magsiter application manager must create an layout named "tools4ever-leerlingen-actief"
  - The username must be authorized for the layout "tools4ever-leerlingen-actief"
