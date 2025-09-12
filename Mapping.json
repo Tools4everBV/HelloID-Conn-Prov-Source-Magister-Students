@@ -3,7 +3,7 @@
 		{
 			"name": "Contact.Personal.Address.HouseNumber",
 			"mode": "complex",
-			"value": "function isNumeric(n) {\n  return !isNaN(parseFloat(n)) && isFinite(n);\n}\n\nfunction getValue() {\n    val = source.HOUSENR;\n\n    if (isNumeric(val)) {\n        return parseInt(val);\n    } else {\n        return 0;\n    }\n}\n\ngetValue();",
+			"value": "function isNumeric(n) {\n  return !isNaN(parseFloat(n)) && isFinite(n);\n}\n\nfunction getValue() {\n    let val = source.HOUSENR;\n\n    if (isNumeric(val)) {\n        return parseInt(val);\n    } else {\n        return 0;\n    }\n}\n\ngetValue();",
 			"validation": {
 				"required": false
 			}
@@ -141,7 +141,7 @@
 		{
 			"name": "Department.DisplayName",
 			"mode": "field",
-			"value": "Class",
+			"value": "CLASS",
 			"validation": {
 				"required": false
 			}
@@ -149,7 +149,7 @@
 		{
 			"name": "Department.ExternalId",
 			"mode": "field",
-			"value": "Class",
+			"value": "CLASS",
 			"validation": {
 				"required": false
 			}
